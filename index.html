@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigfoot Footnote Demo</title>
+    <!-- Include the CSS file -->
+    <link rel="stylesheet" href="dist/bigfoot-default.css">
+</head>
+<body>
+    <article>
+        <p>This is a sample text with a footnote.<sup id="fnref:1"><a href="#fn:1" rel="footnote" class="bigfoot-footnote__button">1</a></sup></p>
+        <div class="footnotes">
+            <ol>
+                <li id="fn:1">
+                    <p>This is the footnote content. <a href="#fnref:1" rel="footnote" class="bigfoot-footnote__button__circle">↩</a></p>
+                </li>
+            </ol>
+        </div>
+    </article>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include the Bigfoot JS file -->
+    <script src="dist/bigfoot.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initialize Bigfoot
+            $.bigfoot();
+        });
+    </script>
+</body>
+</html>

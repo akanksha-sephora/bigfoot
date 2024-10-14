@@ -196,6 +196,8 @@
       # @returns {Boolean}
       # @default true
       useFootnoteOnlyOnce : true
+      
+
 
       #*
       # A string representation of the markup of the footnote content popovers. It's best not to change this too much; the script relies on the class names and hierarchy of the default markup to do its work. However, you can add information to the rendered markup by adding string literals or one or more of the following variables:
